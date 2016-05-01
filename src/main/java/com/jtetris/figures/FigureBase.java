@@ -78,21 +78,21 @@ public class FigureBase {
     public void MoveRight () {
         for (int i=0; i<getComponents().size(); i++){
             double position = getComponents().get(i).getX();
-            getComponents().get(i).setX(position + 20);
+            getComponents().get(i).setX(position + UNIT);
         }
     }
 
     public void MoveLeft (){
         for (int i=0; i<getComponents().size(); i++){
             double position = getComponents().get(i).getX();
-            getComponents().get(i).setX(position - 20);
+            getComponents().get(i).setX(position - UNIT);
         }
     }
     
     public void MoveDown(int units){
         for (int i=0; i<getComponents().size(); i++){
             double position = getComponents().get(i).getY();
-            getComponents().get(i).setY(position+10*units);
+            getComponents().get(i).setY(position+(UNIT/2)*units);
         }
     }
     
@@ -101,7 +101,7 @@ public class FigureBase {
 
         for (int i=0; i<recs.size(); i++){
             double position = recs.get(i).getY();
-            recs.get(i).setY((position+10*units));
+            recs.get(i).setY((position+(UNIT/2)*units));
         }
         
         return recs;
@@ -123,7 +123,7 @@ public class FigureBase {
 
         for (int i=0; i<recs.size(); i++){
             double position = recs.get(i).getX();
-            recs.get(i).setX(position-20);
+            recs.get(i).setX(position-UNIT);
         }
         
         return recs;

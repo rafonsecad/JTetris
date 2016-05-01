@@ -1,0 +1,11 @@
+.button {
+    -fx-font-weight: bold;
+}
+
+#rec{
+    -fx-fill: red;
+}
+
+.GamePane{
+    -fx-background-color: black;
+}
